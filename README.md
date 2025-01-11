@@ -36,7 +36,8 @@ Step 2: Process the Video The system will automatically process the video. Durin
 .Detection Visualization: The detected objects and sub-objects are visualized on the frames and saved in an output video. 
 .Results Storage: The results are stored in a detection_results.json file, and cropped images of sub-objects are stored in the cropped_data folder
 
-Step 3: Save and Download Results a.Processed Video: The processed video with object detections is saved as processed_video.mp4 and can be downloaded by running:
+Step 3: Save and Download Results 
+a.Processed Video: The processed video with object detections is saved as processed_video.mp4 and can be downloaded by running:
 
 "files.download(output_video_path)"
 
@@ -47,7 +48,7 @@ You can download them as a zip file by running: "create_and_download_zip_file(cr
 
 d.Frames: You can also download the extracted frames as a zip file by running: "create_and_download_zip_file(output_dir, "frames")"
 
-.Code Workflow Video Processing: The cv2.VideoCapture method reads each frame from the uploaded video. The YOLOv5 model is applied to each frame to detect objects,
+Code Workflow Video Processing: The cv2.VideoCapture method reads each frame from the uploaded video. The YOLOv5 model is applied to each frame to detect objects,
 which are then processed by the detect_and_associate_objects() function.
 
 Object Detection: The YOLOv5 model is loaded using torch.hub.load('ultralytics/yolov5', 'yolov5s'), which automatically downloads the model and loads it for inference.
@@ -67,6 +68,6 @@ Run the provided code. It will process the video, detect objects, associate sub-
 Download the processed video, detection results, and cropped images. License This project is licensed under the MIT License. 
 You are free to use and modify the code as needed, but please attribute the original authors.
 
-.Acknowledgements 
+6.Acknowledgements 
 
 YOLOv5: Used for real-time object detection. See the official YOLOv5 repository. OpenCV: Used for video processing and frame extraction. See the OpenCV documentation.
