@@ -37,6 +37,7 @@ Step 2: Process the Video The system will automatically process the video. Durin
 .Results Storage: The results are stored in a detection_results.json file, and cropped images of sub-objects are stored in the cropped_data folder
 
 Step 3: Save and Download Results 
+
 a.Processed Video: The processed video with object detections is saved as processed_video.mp4 and can be downloaded by running:
 
 "files.download(output_video_path)"
